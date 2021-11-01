@@ -1,0 +1,7 @@
+# Project exclude paths
+/.gradle/
+/build/
+/build/classes/java/main/
+/helm/istio-1.11.3/
+/.idea/
+/gradle/wrapper/
