@@ -27,3 +27,17 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+jib {
+    to {
+        image = 'docker.io/mikegolovanov/rabbit-direct-echo'
+        auth {
+            username = '***'
+            password = '***'
+        }
+    }
+
+    container {
+        volumes = ['/config']
+    }
+}
