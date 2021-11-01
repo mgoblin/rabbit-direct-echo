@@ -1,0 +1,6 @@
+Установка производится после установки rabbit-proxy
+
+Работаем в подпапке helm
+
+helm install rabbit-direct-echo rabbit-direct-echo --namespace eventbus
+#helm uninstall rabbit-direct-echo --namespace eventbus
