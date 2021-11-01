@@ -8,3 +8,24 @@ spring:
     port: 5672
 
     request-queues: "rq1"
+
+management:
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
+    enabled: true
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health
+    jmx:
+      exposure:
+        include: health
+
+server:
+  port : 8081
